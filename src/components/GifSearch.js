@@ -18,14 +18,13 @@ export default class GifSearch extends Component {
 
     return (
       <div className='searchForm'>
-        <form onSubmit={ this.onEventHandler }>
+        <form onSubmit={this.onEventHandler}>
           <input 
           type="text"
           placeholder="Search..."
           value={this.state.query}
           onChange={ event => this.setState({ query: event.target.value }) } 
           ></input>
-          <input type="submit" ></input>
         </form>
       </div>
     )

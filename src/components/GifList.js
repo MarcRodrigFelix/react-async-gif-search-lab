@@ -8,9 +8,9 @@ export default class GifList extends Component {
     return (
       <div>
         <ul>
-            { this.props.gifs.map( gif => <li>
-              <img key={gif.url} src={gif.url} alt="gif" ></img>
-            </li> ) }
+          { this.props.gifs.map( gif =>
+              <li><img key={gif.url} src={gif.url} alt="gif"></img></li>
+          )}
         </ul>
       </div>
     )
